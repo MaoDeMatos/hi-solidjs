@@ -9,6 +9,13 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  @apply bg-slate-900 text-slate-100;
+}
+
+html,
+body,
+#root {
+  @apply h-screen w-full;
 }
 
 code {
@@ -18,5 +25,5 @@ code {
 }
 
 a {
-  @apply transition-colors text-emerald-500 hover:text-emerald-200;
+  @apply transition-colors text-sky-400 hover:text-sky-200;
 }

@@ -11,15 +11,15 @@ const FizzBuzz: Component = () => {
   }
 
   return (
-    <div class="grid grid-flow-row-dense gap-x-2 auto-cols-max grid-cols-10">
+    <section class="grid grid-flow-row gap-x-2 auto-cols-max grid-cols-10 content-center justify-center text-center rounded-xl border border-sky-800 overflow-hidden">
       <For each={[...Array(100)]}>
         {(_, index) => (
-          <span class="p-1 even:bg-slate-700" data-index={index()}>
+          <p class="p-1 even:bg-sky-800" data-index={index()}>
             {String(checkNumber(index() + 1))}
-          </span>
+          </p>
         )}
       </For>
-    </div>
+    </section>
   );
 };
 
